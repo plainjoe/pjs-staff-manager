@@ -1,0 +1,155 @@
+/* -------------------- pjs-staff-archive -------------------- */
+.pjs-staff-archive {
+	padding:40px;
+	background:#fff;
+	display:flex;
+}
+.pjs-staff-archive .wrapper {
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+}
+.pjs-staff-archive .wrapper .filters {
+	display:flex;
+	flex-flow:row wrap;
+	width:calc(100% + 20px);
+	margin:40px 0 40px -10px;
+}
+.pjs-staff-archive .wrapper .filters .filter {
+	flex:1 0 33.3%;
+}
+.pjs-staff-archive .wrapper .filters .filter .container {
+	padding:0 10px;
+}
+.pjs-staff-archive .wrapper .filters .filter .container select {
+	width:100%;
+	border:1px solid #ccc;
+	display:block;
+}
+.pjs-staff-archive .wrapper .loader {
+	height:100px;
+	text-align:center;
+	display:none;
+}
+.pjs-staff-archive .wrapper .loader img {
+	height:100%;
+	margin:0 auto;
+}
+.pjs-staff-archive .wrapper > .btns {
+	text-align:center;
+}
+.pjs-staff-archive .wrapper .cards {
+	width:calc(100% + 20px);
+	margin-top:20px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-start;
+	transform:translateX(-10px);
+}
+.pjs-staff-archive .wrapper .cards .card {
+	margin:0;
+	opacity:1;
+	flex:0 1 33.3%;
+	display:flex;
+}
+.pjs-staff-archive .wrapper .cards .card.hidden {
+	opacity:0;
+}
+.pjs-staff-archive .wrapper .cards .card .container {
+	width:100%;
+	margin:20px 10px;
+	background:#fff;
+	box-shadow:0 0 20px rgba(0,0,0,.25);
+	display:flex;
+	flex-flow:column nowrap;
+}
+.pjs-staff-archive .wrapper .cards .card .container .image {
+	width:100%;
+	padding-top:100%;
+	position:relative;
+	background:url(../images/placeholder-medium.jpg) no-repeat center / cover;
+}
+.pjs-staff-archive .wrapper .cards .card .container .image .tint {
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.pjs-staff-archive .wrapper .cards .card .container .image:hover .tint {
+	opacity:.25;
+}
+.pjs-staff-archive .wrapper .cards .card .container .details {
+	width:calc(100% - 40px);
+	padding:20px;
+	flex:1 0 auto;
+	display:flex;
+	flex-flow:column nowrap;
+}
+.pjs-staff-archive .wrapper .cards .card .container .details p {
+	flex:1 0 auto;
+}
+.pjs-staff-archive .wrapper .cards .card .container .details .social {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+.pjs-staff-archive .wrapper .cards .card .container .details .social .icon {
+	margin:10px 10px 0 0;
+	font-size:24px;
+}
+.pjs-staff-archive .wrapper .cards .card .container .details .social .icon:last-child {
+	margin-right:0;
+}
+
+
+/* -------------------- pjs-staff-single -------------------- */
+.pjs-staff-single {
+	padding:40px;
+	background:#fff;
+	display:flex;
+}
+.pjs-staff-single .wrapper {
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	display:flex;
+	flex-flow:row-reverse nowrap;
+}
+.pjs-staff-single .wrapper .content {
+	flex:1 1 calc(60% - 20px);
+	padding-right:20px;
+}
+.pjs-staff-single .wrapper .image {
+	flex:1 1 40%;
+}
+.pjs-staff-single .wrapper .image .img {
+	width:100%;
+	padding-top:100%;
+}
+.pjs-staff-single .wrapper .social {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+}
+.pjs-staff-single .wrapper .social .icon {
+	margin-right:10px;
+	font-size:24px;
+}
+.pjs-staff-single .wrapper .social .icon:last-child {
+	margin-right:0;
+}
+
+
+/* -------------------- miscellaneous -------------------- */
+.pjs-staff-trans {
+	transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
